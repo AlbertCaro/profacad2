@@ -6,10 +6,10 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <!-- Favicons -->
-    <link rel="apple-touch-icon" href="../../public/assets/img/kit/free/apple-icon.png">
-    <link rel="icon" href="assets/img/kit/free/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/img/kit/free/apple-icon.png">
+    <link rel="icon" href="../assets/img/kit/free/favicon.png">
     <title>
-        Profile &#45; Material Kit by Creative Tim
+        Landing &#45; Material Kit by Creative Tim
     </title>
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
@@ -25,7 +25,7 @@
 <nav class="navbar navbar-color-on-scroll navbar-transparent    fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand" href="index.html">PROFACAD</a>
+            <a class="navbar-brand" href="../index.html">Material Kit </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 <span class="navbar-toggler-icon"></span>
@@ -39,7 +39,7 @@
                         <i class="material-icons">apps</i> Components
                     </a>
                     <div class="dropdown-menu dropdown-with-icons">
-                        <a href="index.html" class="dropdown-item">
+                        <a href="../index.html" class="dropdown-item">
                             <i class="material-icons">layers</i> All Components
                         </a>
                         <a href="http://demos.creative-tim.com/material-kit/docs/2.0/getting-started/introduction.html" class="dropdown-item">
@@ -71,24 +71,7 @@
         </div>
     </div>
 </nav>
-<div class="page-header header-filter" data-parallax="true" style="background-image: url('../assets/img/kit/city.jpg');">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                @yield('header')
-            </div>
-        </div>
-    </div>
-</div>
-<div class="main main-raised">
-    <div class="profile-content">
-        <div class="container">
-            <div class="tab-space">
-                @yield('content')
-            </div>
-        </div>
-    </div>
-</div>
+@yield('content')
 <footer class="footer ">
     <div class="container">
         <nav class="pull-left">
