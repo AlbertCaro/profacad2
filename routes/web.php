@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/form',function (){
+   return view('form');
+});
+
 Route::get('/signup', function () {
     return view('signup');
 });

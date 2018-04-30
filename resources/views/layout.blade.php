@@ -108,7 +108,7 @@
     </div>
 </footer>
 <!--   Core JS Files   -->
-<script src="assets/js/core/jquery.min.js"></script>
+<script src="{{asset("assets/js/core/jquery.min.js")}}"></script>
 <script src="assets/js/core/popper.min.js"></script>
 <script src="assets/js/bootstrap-material-design.js"></script>
 <!--  Plugin for Date Time Picker and Full Calendar Plugin  -->
@@ -122,5 +122,20 @@
 <!-- Fixed Sidebar Nav - js With initialisations For Demo Purpose, Don't Include it in your project -->
 <script src="assets/assets-for-demo/js/material-kit-demo.js"></script>
 </body>
-
+<script>
+    $('.datetimepicker').datetimepicker({
+        format: 'DD/MM/YYYY',
+        icons: {
+            time: "fa fa-clock-o",
+            date: "fa fa-calendar",
+            up: "fa fa-chevron-up",
+            down: "fa fa-chevron-down",
+            previous: 'fa fa-chevron-left',
+            next: 'fa fa-chevron-right',
+            today: 'fa fa-screenshot',
+            clear: 'fa fa-trash',
+            close: 'fa fa-remove'
+        }
+    });
+</script>
 </html>
